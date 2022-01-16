@@ -2,258 +2,319 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Run Buddy | RunBuddy.com </title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- UTF-8 vs ASCII allows for symbols emojis and foreign languages -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <Title>Run Buddy</Title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <!-- navigation tags - block level element -->
-  <header>
-    <h1>
-      <a href="/">RUN BUDDY</a>
-    </h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="#what-we-do">What We Do</a>
-        </li>
-        <li>
-          <a href="#what-you-do">What You Do</a>
-        </li>
-        <li>
-          <a href="#your-trainers">Your Trainers</a>
-        </li>
-        <li>
-          <a href="#reach-out">Reach Out</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- end navigation -->
+    <!-- navigation -->
+    <header>
+        <h1><a href="./index.html">RUN BUDDY</a></h1>
+        <nav>
+            <!-- Unordered List element -->
+            <ul>
+                <!-- List item element -->
+                <li>
+                    <!-- Anchor element -->
+                    <a href="#what-we-do">What We Do</a>
+                </li>
+                <li>
+                    <a href="#what-you-do">What You Do</a>
+                </li>
+                <li>
+                    <a href="#your-trainers">Your Trainers</a>
+                </li>
+                <li>
+                    <a href="#service-plans">Service Plans</a>
+                </li>
+                <li>
+                    <a href="#reach-out">Reach Out</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- hero/jumbotron -->
+    <section class="hero">
+        <div class="hero-cta">
+            <h2>Start Building Habits.</h2>
+            <p>
+                Regular exercise is one of the best things you can do for your health. It has many benefits, 
+                including improving your overall health and fitness, and reducing your risk for many chronic diseases. 
+                There are many different types of exercise; it is important that you pick the right types for you.            </p>
+        </div>
+        <div class="hero-form">
+            <h3>Get Started Today</h3>
+            <p>Fill out this form and one of our trainers will schedule a consult</p>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+                <label for="email">E-mail Address:</label>
+                <input type="email" placeholder="E-mail Address" name="email" id="email" class="form-input" />
+                <label for="phone">Phone Number:</label>
+                <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+                <p>
+                    Have you worked out with a trainer before?
+                    <span class="radio-wrapper">
+                        <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                        <label for="trainer-yes">Yes</label>
+                    </span>
+                    <span class="radio-wrapper">
+                        <input type="radio" name="trainer-confirm" id="trainer-no" />
+                        <label for="trainer-no">No</label>
+                    </span>
+                </p>
+                <p>
+                    <span class="checkbox-wrapper">
+                        <input type="checkbox" name="age-confirm" id="checkbox" />
+                        <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
+                    </span>
+                </p>
+                <button type="submit">Get running!</button>
+            </form>
+        </div>
+    </section>
 
-  <!-- hero/jumbotron -->
-  <section class="hero">
-    <div class="hero-cta">
-      <h2>Start Building Habits.</h2>
-      <p>
-        Regular exercise is one of the best things you can do for your health. It has many benefits, 
-        including improving your overall health and fitness, and reducing your risk for many chronic diseases. 
-        There are many different types of exercise; it is important that you pick the right types for you.
-      </p>
-    </div>
+    <!-- "what we do" section -->
+    <section id="what-we-do" class="intro">
+        <div class="flex-row">
+            <h2 class="section-title primary-border">What We Do</h2>
+        </div>
+        <div class="flex-row">
+            <p>
+                Experience the very latest in fitness exercises and 
+                innovative equipment to condition your abs and improve
+                your posture and strength.
+            </p>
+        </div>
+    </section>
 
-    <div class="hero-form">
-      <h3>Get Started Today</h3>
-      <p>Fill out this form and one of our trainers will schedule a consult.</p>
-      <form>
-        <label for="name">Your Name</label>
-        <input type="text" placeholder="Your Name" id="name" name="name" class="form-input" />
-        <label for="email">Your Email</label>
-        <input type="email" placeholder="Email Address" id="email" name="email" class="form-input" />
-        <label for="phone">Phone Number</label>
-        <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
-        <p>
-          Have you worked out with a trainer before?
-          <span class="radio-wrapper">
-            <input type="radio" name="trainer-confirm" id="trainer-yes" />
-            <label for="trainer-yes">Yes</label>
-          </span>
-          <span class="radio-wrapper">
-            <input type="radio" name="trainer-confirm" id="trainer-no" />
-            <label for="trainer-no">No</label>
-          </span>
-        </p>
-        <p>
-          <span class="checkbox-wrapper">
-            <input type="checkbox" name="checkpoint1" id="checkbox" />
-            <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
-          </span>
-        </p>
-        <button type="submit">
-          Get running!
-        </button>
-      </form>
-    </div>
-  </section>
-  <!-- end header -->
+    <!-- "what you do" section -->
+    <section id="what-you-do" class="steps">
+        <div class="flex-row">
+            <h2 class="section-title secondary-border">What You Do</h2>
+        </div>
+        <div class="step">
+            <h3>Step 1.</h3>
+            <div class="step-info">
+                <div class="step-img">
+                    <img src="./assets/images/step-1.svg" alt="" />
+                </div>
+                <div class="step-text">
+                    <h4>Fill Out the Form Above.</h4>
+                    <p>You're already here, so why not?</p>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <h3>Step 2.</h3>
+            <div class="step-info">
+                <div class="step-img">
+                    <img src="./assets/images/step-2.svg" alt="" />
+                </div>
+                <div class="step-text">
+                    <h4>Consult with One of Our Trainers.</h4>
+                    <p>Are you here to build muscle, lose weight, or just feel good?</p>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <h3>Step 3.</h3>
+            <div class="step-info">
+                <div class="step-img">
+                    <img src="./assets/images/step-3.svg" alt="" />
+                </div>
+                <div class="step-text">
+                    <h4>Get Running.</h4>
+                    <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <h3>Step 4.</h3>
+            <div class="step-info">
+                <div class="step-img">
+                    <img src="./assets/images/step-4.svg" alt="" />
+                </div>
+                <div class="step-text">
+                    <h4>See Results.</h4>
+                    <p>Bi-weekly checkins with your trainer will keep you focused</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- "what we do" start - <section> -->
-  <section id="what-we-do" class="intro">
-    <div class="flex-row">
-      <h2 class="section-title primary-border">
-        What We Do
-      </h2>
-    </div>
-    <div class="flex-row">
-      <p>
-        <strong>Endurance, or aerobic,</strong> activities increase your breathing and heart rate. They keep your heart, lungs, and circulatory system healthy and improve your overall fitness. Examples include brisk walking, jogging, swimming, and biking.
-        <br>
-        <strong> Strength, or resistance training, exercises</strong> make your muscles stronger. Some examples are lifting weights and using a resistance band.
-        <br>
-        <strong> Balance exercises</strong> can make it easier to walk on uneven surfaces and help prevent falls. To improve your balance, try tai chi or exercises like standing on one leg.
-        <br>
-        <strong> Flexibility exercises</strong> stretch your muscles and can help your body stay limber. Yoga and doing various stretches can make you more flexible.
-      </p>
-    </div>
-  </section>
-  <!-- end "what we do" -->
+    <!-- "meet the trainers" start -->
+    <section id="your-trainers">
+        <div class="flex-row">
+            <h2 class="section-title primary-border">SEE OUR SERVICES</h2>
+        </div>
+        <div class="trainers">
+            <article class="trainer">
+                <div class="trainer-img trainer-1">
+                    <div>
+                        <h3 class="trainer-name">Moses Saffa Gbondo</h3>
+                        <h4 class="trainer-role">Speed / Strength</h4>
+                    </div>
+                </div>
+                <div class="trainer-bio">
+                    <h3 class="trainer-name">Moses Saffa Gbondo</h3>
+                    <h4 class="trainer-role">Speed / Strength</h4>
+                    <p>
+                        Moses recognises that to be a truly great personal trainer, you cannot neglect the business skills required. These are the same skills which gave allowed him to grow a huge international business while genuinely impacting the personal lives of his clients and helping them transform their bodies, mindset and lives into what they really want.                    </p>
+                </div>
+            </article>
 
-  <!-- "what you do" start -->
-  <section id="what-you-do" class="steps">
-    <div class="flex-row">
-      <h2 class="section-title secondary-border">
-        What You Do
-      </h2> 
-    </div>
-    <div class="step">
-      <h3>Step 1.</h3>
-      <div class="step-info">
-        <div class="step-img">
-          <img src="./assets/images/step-1.svg" alt="" />
-        </div>
-        <div class="step-text">
-          <h4>Fill Out The Form Above</h4>
-          <p>You're already here, so why not?</p>
-        </div>
-      </div>
-    </div>
-    <div class="step">
-      <h3>Step 2.</h3>
-      <div class="step-info">
-        <div class="step-img">
-          <img src="./assets/images/step-2.svg" alt="" />
-        </div>
-        <div class="step-text">
-          <h4>Consult With One Of Our Trainers</h4>
-          <p>Are you here to build muscle, lose weight, or just feel good?</p>
-        </div>
-      </div>
-    </div>
-    <div class="step">
-      <h3>Step 3.</h3>
-      <div class="step-info">
-        <div class="step-img">
-          <img src="./assets/images/step-3.svg" alt="" />
-        </div>
-        <div class="step-text">
-          <h4>Get Running</h4>
-          <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
-        </div>
-      </div>
-    </div>
-    <div class="step">
-      <h3>Step 4.</h3>
-      <div class="step-info">
-        <div class="step-img">
-          <img src="./assets/images/step-4.svg" alt="" />
-        </div>
-        <div class="step-text">
-          <h4>See Results</h4>
-          <p>Bi-weekly checkins with your trainer will keep you focused</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- "what you do" end -->
+            <!-- "see our second services -->
+            <article class="trainer">
+                <div class="trainer-img trainer-2">
+                    <div>
+                        <h3 class="trainer-name">Yankuba (Arab Trainer) Kallon</h3>
+                        <h4 class="trainer-role">Endurance</h4>
+                    </div>
+                </div>
+                <div class="trainer-bio">
+                    <h3 class="trainer-name">Yankuba (Arab Trainer) Kallon</h3>
+                    <h4 class="trainer-role">Endurance</h4>
+                    <p>
+                        Sierra Leone based trainer Yankuba trains a roster of celebrity clients, is a published author and has his own brand of fitness clothing. But despite this borderline celebrity trainer status, he remains grounded. He knows that working with regular people and helping them to achieve the results they’re looking for is what gets referrals, and word of mouth business. After 5 years of experience in the fitness industry, Kallon knows something about being able to relate to others and considers interpersonal skills to be one of the most important assets an aspiring trainer can possess.
+                    </p>
+                </div>
+            </article>
 
-  <!-- "meet the trainers" start -->
-  <section id="your-trainers">
-    <div class="flex-row">
-      <h2 class="section-title primary-border">
-        Meet The Trainers
-      </h2>
-    </div>
-
-    <div class="trainers">
-      <article class="trainer">
-        <img src="./assets/images/SAFFA.jpg" alt="Moses Saffa Gbondo ready to hit the irons" />
-        <div class="trainer-bio">
-          <h3 class="trainer-name">Moses Saffa Gbondo</h3>
-          <h4 class="trainer-role">Speed / Strength</h4>
-          <p>Moses recognises that to be a truly great personal trainer, you cannot neglect the business skills required. These are the same skills which gave allowed him to grow a huge international business while genuinely impacting the personal lives of his clients and helping them transform their bodies, mindset and lives into what they really want.</p>
+            <!-- "see our third services -->
+            <article class="trainer">
+                <div class="trainer-img trainer-3">
+                    <div>
+                        <h3 class="trainer-name">Abdul (Sugay) Kamara</h3>
+                        <h4 class="trainer-role">Strength</h4>
+                    </div>
+                </div>
+                <div class="trainer-bio">
+                    <h3 class="trainer-name">Abdul (Sugay) Kamara</h3>
+                    <h4 class="trainer-role">Strength</h4>
+                    <p>
+                        Abdul firmly believes in mastering your craft by honing your understanding of your physiology and how your body works in relation to your mind. Abdul puts the client relationship at the forefront of all decisions and uses emotional intelligence to help the client to get the best results possible. When outsourcing tasks like marketing or advertising, he cautions against outsourcing something that you have absolutely no idea about because without at least some knowledge it’s difficult to gauge how effectively the work is being done.                    </p>
+                </div>
+            </article>
         </div>
-      </article>
-
-
-      
-      <article class="trainer">
-        <img src="./assets/images/Arab-Trainer.jpg" alt="Yankuba -Arab Trainer- Kallon" style="height: 380px;"/>
-        <div class="trainer-bio">
-          <h3 class="trainer-name">Yankuba (Arab Trainer) Kallon</h3>
-          <h4 class="trainer-role">Endurance</h4>
-          <p>Sierra Leone based trainer Yankuba trains a roster of celebrity clients, is a published author and has his own brand of fitness clothing. But despite this borderline celebrity trainer status, he remains grounded. He knows that working with regular people and helping them to achieve the results they’re looking for is what gets referrals, and word of mouth business. After 5 years of experience in the fitness industry, Kallon knows something about being able to relate to others and considers interpersonal skills to be one of the most important assets an aspiring trainer can possess.</p>
-          </div>
-        </article>
-
-      <article class="trainer">
-        <img src="./assets/images/abdul.jpg" alt="Abdul (Sugay) Kamara" style="height: 380px;" />
-        <div class="trainer-bio">
-          <h3 class="trainer-name">Abdul (Sugay) Kamara</h3>
-          <h4 class="trainer-role">Pace</h4>
-          <p>Abdul firmly believes in mastering your craft by honing your understanding of your physiology and how your body works in relation to your mind. Abdul puts the client relationship at the forefront of all decisions and uses emotional intelligence to help the client to get the best results possible. When outsourcing tasks like marketing or advertising, he cautions against outsourcing something that you have absolutely no idea about because without at least some knowledge it’s difficult to gauge how effectively the work is being done.</p>
-        </div>
-      </article>
-    </div>
-  </section>
+    </section>
   <!-- "meet the trainers" end -->
 
-  <!-- "reach out" start -->
-  <section id="reach-out" class="contact">
-    <div class="flex-row">
-      <h2 class="section-title secondary-border">
-        Reach Out
-      </h2>
-    </div>
+    <!-- Service Plans -->
+    <section id="service-plans" class="services">
+        <h2 class="section-title secondary-border">
+            Our Service Plans
+        </h2>
+        <div class="service-grid-wrapper">
+            <div class="service-grid-container">
+                <!-- Headers -->
+                <div class="service-grid-item grid-head basic">
+                    Basic
+                </div>
+                <div class="service-grid-item grid-head premium">
+                    Premium
+                </div>
+                <!-- Body -->
+                <div class="service-grid-item basic">
+                    Support Offered Between 9-5
+                </div>
 
-    <div class="contact-info">
-      <div>
-        <h3>Run Buddy</h3>
-        <p>
-          Any questions or concerns before signing up? 
-          <br/>
-          Let us know and we'll be happy to talk to you!
-        </p>
+                <div class="service-grid-item premium">
+                    24/7 Plan Support
+                </div>
 
-        <address>
-          32 Gooding Drive,  <br/>
-          Lumley  <br/>
-          Freetown.<br/>
-          E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
-        </address>
-        
-      </div>
+                <div class="service-grid-item basic">
+                    Bi-Weekly Trainer Calls
+                </div>
 
-      <div class="contact-form">
-        <h3>Contact Us</h3>
-        <form>
-          <label for="contact-name">Your Name</label>
-          <input type="text" id="contact-name" placeholder="Your Name" />
-      
-          <label for="contact-message">Message</label>
-          <textarea id="contact-message" placeholder="Message"></textarea>
-      
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-      
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
-        frameborder="0" style="border:0" allowfullscreen>
-      </iframe>
-    </div>
-  </section>
-  <!-- "reach out" end -->
+                <div class="service-grid-item premium">
+                    Weekly Trainer Calls
+                </div>
 
-  <!-- footer -->
-  <footer>
-    <h2>❤️ Made with love by Run Buddy.</h2>
-    <div>
-      <a href="./privacy-policy.html">Read Our Privacy Policy</a><br/>
-      &copy; 2022 Run Buddy, Inc.
-    </div>
-  </footer>
-  <!-- footer end -->
+                <div class="service-grid-item basic">
+                    N/A
+                </div>
+
+                <div class="service-grid-item premium">
+                    Discounts At Select Running Stores
+                </div>
+
+                <div class="service-grid-item both">
+                    Subscription to Run Buddy's Health Magazine!
+                </div>
+
+                <div class="service-grid-item grid-price basic">
+                    $10/mo
+                </div>
+
+                <div class="service-grid-item grid-price premium">
+                    $25/mo
+                </div>
+
+                <div class="service-grid-item cancel">
+                    Cancel At Any Time!
+                </div>
+            </div> <!-- service-grid-container -->
+        </div> <!-- service-grid-wrapper -->
+    </section>
+
+
+    <!-- "Reach Out" section -->
+    <section id="reach-out" class="contact">
+        <h2 class="section-title secondary-border">Reach Out</h2>
+        <div class="contact-info">
+            <div>
+                <h3>Run Buddy</h3>
+                <p>
+                    Any questions or concerns before signing up?
+                    <br />
+                    Let us know and we'll be happy to talk to you!
+                </p>
+                <address>
+                    32 Gooding Drive, <br />
+                    Lumley <br />
+                    Freetown<br />
+                    <br />
+                    P: 555.RUN.BUDZ (+232 78350434)<br />
+                    E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+                </address>
+            </div>
+
+            <div class="contact-form">
+                <h3>Contact Us</h3>
+                <form>
+                    <label for="contact-name">Your Name</label>
+                    <input type="text" id="contact-name" placeholder="Your Name" />
+
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" placeholder="Message"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <iframe
+                src="https://maps.google.com/maps?q=freetown&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <h2>❤️ Made with love by Unisa Kamara.</h2>
+        <div>
+            <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
+            &copy; 2022 Run Buddy, Inc.
+        </div>
+    </footer>
+
 </body>
+
 </html>
